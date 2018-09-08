@@ -8,53 +8,48 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">
-    <link rel="stylesheet" href="assets/css/style.css">
   </head>
   <body>
-
-    <div class="row">
-        <div id="instructions" class="col-6">
-            <p>
-                Collect the Gems, but be careful! You can only hold 24 pounds at once.
-            </p>
-        </div>
+    <div id="instructions">
+        <h1>Choose Your Character!</h1>
     </div>
-    <div id="counters" class="row">
-            <div id="numberToMatch" class="col-3">
-                <p>
-                   0
-                </p>
-            </div>
-            <div id="score" class="col-3">
-                <p>
-                   0
-                </p>
-            </div>
-            <div id="wins" class="col-3">
-                <p>
-                   0
-                </p>
-            </div>
-            <div id="loses" class="col-3">
-                <p>
-                   0
-                </p>
-            </div>
+    <div id="characters" class="container">
+
+        <div  id = "pacMan" class="character">
+            <img src="https://via.placeholder.com/350x150" alt="">
         </div>
+        
+        <div class="character">
+            <img src="https://via.placeholder.com/350x150" alt="">
+        </div>
+
+        <div class="character">
+            <img src="https://via.placeholder.com/350x150" alt="">
+        </div>
+
+        <div class="character">
+            <img src="https://via.placeholder.com/350x150" alt="">
+        </div>
+        
+    </div>
+    <h1>Your character:</h1>
+    <div id="characterChoice"></div>
+    
+    <h1>Batte Arena:</h1>
+    <div id="battleArena">
+
+    </div>
+    <h1>Defeated:</h1>
+    <div id="defeated">
+
+    </div>
 
       
-    <div id="crystalContainer" class="container row">
-        <img class="col-3 crystal" id="crystal1" src="assets/images/crystal1.png" alt="">
-        <img class="col-3 crystal" id="crystal2" src="assets/images/crystal2.png" alt="">
-        <img class="col-3 crystal" id="crystal3" src="assets/images/crystal3.png" alt="">
-        <img class="col-3 crystal" id="crystal4" src="assets/images/crystal4.png" alt="">
-    </div>
-    
     <!-- Optional JavaScript -->
-    <script src = "assets/javascript/game.js"></script>
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em" crossorigin="anonymous"></script>
-  </body>
+    <script src="assets/javascript/game.js"></script>
+    </body>
 </html>
