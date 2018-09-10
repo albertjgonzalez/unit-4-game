@@ -1,0 +1,33 @@
+
+#attackButton{
+    visibility: hidden;
+}
+
+#resetButton{
+    visibility: hidden;
+}
+
+.character{
+    white-space: nowrap;
+   overflow: hidden;
+   margin: 0;
+    padding: 0;
+    margin: -5px;
+    width: 200px;
+    height: 150px;
+    
+}
+.character img{
+    width: 100%;
+    height: 100%;
+   
+}
+
+p{
+    white-space: nowrap;
+}
+#instructions{
+    text-align: center;
+    margin: auto;
+}
+

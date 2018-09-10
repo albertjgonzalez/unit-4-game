@@ -8,41 +8,70 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">
-  </head>
+    <link rel="stylesheet" href="assets/css/style.css">
+    </head>
   <body>
-    <div id="instructions">
-        <h1>Choose Your Character!</h1>
+
+        <h1 id="instructions">Choose Your Character!</h1>
+<div class="container row">
+    <div class="col-6">
+
+
+
+    <div class="container row characterHolder">
+        <div id="characters" class="container row">
+                <div  id="pacMan" class="character col-3">
+                    <img src="assets/images/pacMan.png" alt="">
+                    <p class="healthPower">HP:</p><p class="attackPower">Attack:</p>
+                </div>
+                <div id="lucario" class="character col-3">
+                    <img src="assets/images/lucario.png" alt="">
+                    <p class="healthPower">HP:</p><p class="attackPower">Attack:</p>
+                </div>
+                <div id="wario" class="character col-3">
+                    <img src="assets/images/wario2.png" alt="">
+                    <p class="healthPower">HP:</p><p class="attackPower">Attack:</p>
+                </div>
+                <div id="corrin" class="character col-3">
+                    <img src="assets/images/corrin2.png" alt="">
+                    <p class="healthPower">HP:</p><p class="attackPower">Attack:</p>
+                </div> 
+            </div>
     </div>
-    <div id="characters" class="container">
-
-        <div  id = "pacMan" class="character">
-            <img src="https://via.placeholder.com/350x150" alt="">
-        </div>
-        
-        <div class="character">
-            <img src="https://via.placeholder.com/350x150" alt="">
-        </div>
-
-        <div class="character">
-            <img src="https://via.placeholder.com/350x150" alt="">
-        </div>
-
-        <div class="character">
-            <img src="https://via.placeholder.com/350x150" alt="">
-        </div>
-        
-    </div>
-    <h1>Your character:</h1>
-    <div id="characterChoice"></div>
     
+    <div class="container row">
     <h1>Batte Arena:</h1>
-    <div id="battleArena">
-
+    <div id="battleArena container">
+        <div class="container row">
+            <div class="col-6">
+                    <h1>Your character:</h1>
+            </div>
+            <div class="col-6">
+                    <h1>Your opponent:</h1>
+            </div>
+        </div>
+        <div class="container row">
+                <div class="col-6">
+                        <div id="characterChoice"></div>
+                </div>
+                <div class="col-6">
+                        <div id="opponent"></div>
+                </div>
+            </div>
+    </div>        
     </div>
-    <h1>Defeated:</h1>
-    <div id="defeated">
-
+    <div>
+        <button id="attackButton" class="btn btn-danger">Attack!</button>
+        <button id="resetButton" class="btn btn-warning">Reset</button>
     </div>
+    </div>
+    <div class="col-6">
+        <div class="container row characterHolder">
+                <h1>Defeated:</h1>
+                <div id="defeated" class="container row"></div>
+        </div>
+    </div>
+</div>
 
       
     <!-- Optional JavaScript -->
