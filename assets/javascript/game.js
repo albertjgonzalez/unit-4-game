@@ -28,7 +28,7 @@ function matchCharacter(character){
 function checkScore(score){
     if(score == 3){
         $('#resetButton').css('visibility', 'visible');
-        $('#instructions').text(characterName.charAt(0).toUpperCase()+ characterName.slice(1)+" is the winner!");
+        $('#instructions').html("The Winner is"+'<br>'+characterName.charAt(0).toUpperCase()+ characterName.slice(1)+'!' );
     }
 };
 
