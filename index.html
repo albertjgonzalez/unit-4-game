@@ -19,13 +19,14 @@
 
 
     <div class="container row characterHolder">
+            <h1>Characters:</h1>
         <div id="characters" class="container row">
+                <div id="lucario" class="character col-3">
+                        <img src="assets/images/lucario.png" alt="">
+                        <p class="healthPower">HP:</p><p class="attackPower">Attack:</p>
+                    </div>
                 <div  id="pacMan" class="character col-3">
                     <img src="assets/images/pacMan.png" alt="">
-                    <p class="healthPower">HP:</p><p class="attackPower">Attack:</p>
-                </div>
-                <div id="lucario" class="character col-3">
-                    <img src="assets/images/lucario.png" alt="">
                     <p class="healthPower">HP:</p><p class="attackPower">Attack:</p>
                 </div>
                 <div id="wario" class="character col-3">
@@ -39,41 +40,47 @@
             </div>
     </div>
     
-    <div class="container row">
-    <h1>Batte Arena:</h1>
-    <div id="battleArena container">
-        <div class="container row">
-            <div class="col-6">
-                    <h1>Your character:</h1>
-            </div>
-            <div class="col-6">
-                    <h1>Your opponent:</h1>
-            </div>
-        </div>
-        <div class="container row">
-                <div class="col-6">
-                        <div id="characterChoice"></div>
-                </div>
-                <div class="col-6">
-                        <div id="opponent"></div>
-                </div>
-            </div>
-    </div>        
-    </div>
-    <div>
-        <button id="attackButton" class="btn btn-danger">Attack!</button>
-        <button id="resetButton" class="btn btn-warning">Reset</button>
-    </div>
     </div>
     <div class="col-6">
-        <div class="container row characterHolder">
-                <h1>Defeated:</h1>
-                <div id="defeated" class="container row"></div>
-        </div>
-    </div>
+            <div class="container row characterHolder">
+                    <h1>Defeated:</h1>
+                    <div id="defeated" class="container row"></div>
+            </div>
+ </div>
+    
 </div>
+<div class="container row">
+        <h1 id="battleArena">Batte Arena:</h1>
+            <div class="container row">
+                <div class="col-6">
+                        <h1>Your character:</h1>
+                </div>
+                <div class="col-6">
+                        <h1>Your opponent:</h1>
+                </div>
+            </div>
+            <div class="container row">
+                    <div class="col-6">
+                            <div id="characterChoice"></div>
+                    </div>
+                    <div class="col-6">
+                            <div id="opponent"></div>
+                    </div>
+                </div>
 
-      
+ </div>
+        <div id="buttons">
+            <button id="attackButton" class="btn btn-danger">Attack!</button>
+            <button id="resetButton" class="btn btn-warning">Reset</button>
+        </div>
+
+        <div>
+                <audio autoplay loop>
+                  <source src="assets/audio/SSBTheme.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+                </audio>
+                </div>
+                
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>

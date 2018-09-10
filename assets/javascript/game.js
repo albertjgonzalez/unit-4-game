@@ -1,8 +1,11 @@
+window.onload = function() {
+    var context = new AudioContext();
+  }
 var characters = {
-    pacMan :{healthPower:120, attackPower: 8, counterAttack: 15},
-    lucario :{healthPower:100, attackPower: 10, counterAttack: 5},
-    wario :{ healthPower:150, attackPower: 5, counterAttack: 20},
-    corrin :{ healthPower:180, attackPower: 3, counterAttack: 25}
+    pacMan :{healthPower:120, attackPower: 6, counterAttack: 20},
+    lucario :{healthPower:100, attackPower: 10, counterAttack: 25},
+    wario :{ healthPower:150, attackPower: 6, counterAttack: 15},
+    corrin :{ healthPower:160, attackPower: 2, counterAttack: 15}
     };
 
 var myCharacter;
@@ -25,9 +28,15 @@ function matchCharacter(character){
 function checkScore(score){
     if(score == 3){
         $('#resetButton').css('visibility', 'visible');
-        $('#instructions').text('You Are The Very Best!');
+        $('#instructions').text(characterName.charAt(0).toUpperCase()+ characterName.slice(1)+" is the winner!");
     }
 };
+
+/*function updateStats(fight){
+   
+    document.getElementById(fight).getElementsByClassName('healthPower')[0].innerHTML=('HP: '+characters.fight.healthPower);
+    document.getElementById(fight).getElementsByClassName('attackPower')[0].innerHTML=('Attack: '+characters.fight.attackPower);
+}*/
 
 function updateStats(){
    
